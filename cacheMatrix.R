@@ -1,3 +1,7 @@
+## this program is to compute the inverse of a matrix. If it is already computed once, it will return the inverse, if not it 
+## will calculate the inverse.
+
+## this mthod gets, and sets a matrx (reates matrix to by invereted).
 makeCacheMatrix <-function(x=mnatrix()){
   i <-NULL
 set<-function(y){
@@ -10,6 +14,7 @@ getinverse <- function() i
 list(set=set, get=get, setinverse = setinverse,getinverse = getinverse)
 }
 
+## this method caclulates the inverse that was created in the previous function.
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
   if(!is.null(i)) {
